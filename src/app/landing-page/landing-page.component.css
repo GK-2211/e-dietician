@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+
+.navbar{
+    background-color: #a3eefd;
+    height : 100px;
+}
+
+.first-card .card-title , .first-card .card-text{
+    margin-left: 60%;
+}
+
+.second-card{
+    background-color: #a3eefd;
+}

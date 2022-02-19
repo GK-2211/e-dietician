@@ -1,0 +1,176 @@
+
+
+<body class="bgcolor">
+    <div id="mySidenav" class="sidenav">
+        <a href="/browse-food">Browse Foods</a>
+        <a href="/profile">Profile</a>
+        <a href="/meal-plan">Plan Your Meal</a>
+        <a href="/login">LogOut</a>
+        
+
+
+    </div>
+
+
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" style="position:absolute;margin-left: 240px;;">
+        <section>
+            <h1>Browse foods</h1>
+            <p>Welcome to the browse foods section! Here you can select various recipies based on their calories and categories,like breakfast,lunch,dinner or snacks. You can also make custom recipies and them to your plans. We also have some professionally
+                crafted diets.</p>
+           
+
+        </section>
+        <br>
+        <br>
+        
+       
+
+        <mat-tab-group>
+            <mat-tab label="Breakfast">
+                <div class="container" id="contained">
+                    <div class="row">
+                        <h2 class="diet">Vegetarian</h2>
+                        
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data1">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <h2 class="diet">Vegan</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data2">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <h2 class="diet">Paleo</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data3">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+              </mat-tab>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <mat-tab label="Lunch">
+
+                <div class="container" id="contained">
+                    <div class="row">
+                        <h2 class="diet">Vegetarian</h2>
+                        
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data11">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <h2 class="diet">Vegan</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data12">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <h2 class="diet">Paleo</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data13">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </mat-tab>
+
+
+
+
+
+
+
+
+
+            <mat-tab label="Salad">  
+
+                <div class="container" id="contained">
+                    <div class="row">
+                        <h2 class="diet">Vegetarian</h2>
+                        
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data21">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <h2 class="diet">Vegan</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data22">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <h2 class="diet">Paleo</h2>
+                        <div class="card" style="width: 18rem;" id="cards" *ngFor ="let data of data23">
+                            <img src={{data.image}} class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title"><b>{{data.title}}</b></h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+               
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+        
+        
+
+
+
+</body>
+
+
