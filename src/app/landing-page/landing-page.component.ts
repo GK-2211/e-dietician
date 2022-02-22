@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private viewportscroller : ViewportScroller) { }
 
   ngOnInit(): void {
   }
 
+  onclick(id : string){
+    this.viewportscroller.scrollToAnchor(id);
+  }
 }
